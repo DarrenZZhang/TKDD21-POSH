@@ -43,8 +43,7 @@ for ii=1:length(nbits_set)
 
     pars.nbits    = nbits;
     pars.Iter_num = 5;
-    pars.eta      = 15; 
-    pars.gamma    = 1; 
+    pars.eta      = 10; 
     pars.lambda   =  .01;
 
     [B_trn,B_tst]= POSH_fun(data_our,pars);
@@ -55,5 +54,5 @@ for ii=1:length(nbits_set)
     DHamm = hammingDist(B2, B1);
     [~, orderH] = sort(DHamm, 2);
     MAP = calcMAP(orderH, WtrueTestTraining);
-    fprintf('iter = %d, Bits: %d, MAP: %.4f...   \n', n_iters, nbits, MAP);
+    fprintf('Bits: %d, MAP: %.4f...   \n', nbits, MAP);
 end
