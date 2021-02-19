@@ -1,6 +1,5 @@
 clear all;clear memory;
-addpath('./Datasets/testbed')
-addpath('./tools')
+addpath('./Datasets')
 dataname = 'CIFAR10';
 nbits_set = [8 16 32 64 128];
 
