@@ -1,7 +1,7 @@
 clear all;clear memory;
 addpath('./Datasets')
 dataname = 'CIFAR10';
-nbits_set = [8 16 32 64 128];
+nbits_set = [16 32 64];
 
 load('cifar10_gist.mat')
 
